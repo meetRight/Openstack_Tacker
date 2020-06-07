@@ -22,16 +22,17 @@ dns-nameserver：8.8.8.8
 >2.脚本文件中更换其中各个组件的Git源（到devstack中逐个查找更换）<br>
 >3.注意网卡的配置信息，切记<br>
 ## 问题解决
-https://yangsijie666.github.io/2018/09/12/devstack%E5%AE%89%E8%A3%85R%E7%89%88/ 安装教程写的不错<br>
+https://yangsijie666.github.io/2018/09/12/devstack%E5%AE%89%E8%A3%85R%E7%89%88/  安装教程写的不错<br>
+
 问题1：虚拟环境问题<br>
 >https://blog.csdn.net/zengfenliang/article/details/82875359 <br>
->https://www.cnblogs.com/zpaixx/p/10578067.html中的问题1 <br>
+>https://www.cnblogs.com/zpaixx/p/10578067.html 中的问题1 <br>
 
 问题2：requirement中hacking版本<br>
 >打开并修改/opt/stack/tacker-horizon/test-requirements.txt中的版本限制，选择直接注释掉<br>
 
 问题3：报错Unable to establish SSL connection<br>
->https://cloud.tencent.com/developer/article/1198254中的问题2<br>
+>https://cloud.tencent.com/developer/article/1198254 中的问题2<br>
 
 
 
