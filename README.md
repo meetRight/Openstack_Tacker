@@ -26,8 +26,10 @@ https://yangsijie666.github.io/2018/09/12/devstack%E5%AE%89%E8%A3%85R%E7%89%88/ 
 问题1：虚拟环境问题<br>
 >https://blog.csdn.net/zengfenliang/article/details/82875359 <br>
 >https://www.cnblogs.com/zpaixx/p/10578067.html中的问题1 <br>
+
 问题2：requirement中hacking版本<br>
 >打开并修改/opt/stack/tacker-horizon/test-requirements.txt中的版本限制，选择直接注释掉<br>
+
 问题3：报错Unable to establish SSL connection<br>
 >https://cloud.tencent.com/developer/article/1198254中的问题2<br>
 
