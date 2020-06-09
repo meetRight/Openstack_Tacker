@@ -10,6 +10,7 @@ dns-nameserver：8.8.8.8
 ```
 (选择安装)<br>
 网络工具：apt install net-tools 查看ifconfig 网卡信息<br>
+https://blog.csdn.net/mountzf/article/details/52035499  interfaces网卡配置详解<br>
 
 打开SSH (https://blog.csdn.net/baidu_38407190/article/details/105981111)<br>
 更换apt源（阿里源）和pip源（清华源）(https://www.cnblogs.com/cymwill/p/10293205.html)<br>
