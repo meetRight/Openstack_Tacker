@@ -9,8 +9,8 @@ enable_plugin barbican https://github.com/openstack/barbican.git stable/rocky
 enable_plugin mistral https://github.com/openstack/mistral.git stable/rocky
 enable_plugin aodh https://github.com/openstack/aodh.git stable/rocky
 
-USE_SCREEN=True
-LOGFILE=/opt/stack/logs/stack.sh.log
+# USE_SCREEN=True
+# LOGFILE=/opt/stack/logs/stack.sh.log
 HOST_IP=192.168.210.xxx
 SERVICE_HOST=$HOST_IP
 GIT_BASE=https://github.com
