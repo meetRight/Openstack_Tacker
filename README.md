@@ -24,21 +24,25 @@ https://blog.csdn.net/mountzf/article/details/52035499  interfaces网卡配置�
 >3.注意网卡的配置信息，切记<br>
 ## 问题解决
 https://yangsijie666.github.io/2018/09/12/devstack%E5%AE%89%E8%A3%85R%E7%89%88/  安装教程写的不错<br>
-https://blog.csdn.net/hjc121125/article/details/105519302 跟我们安装的版本一致<br>
+https://blog.csdn.net/hjc121125/article/details/105519302 跟我们安装的版本一致，而且其中出现的问题很相似<br>
 
 ### 控制节点
-问题1：虚拟环境问题<br>
+问题1：权限问题 <br>
+>https://blog.csdn.net/hjc121125/article/details/105519302 中的问题5 <br>
+问题2：虚拟环境问题<br>
 >https://blog.csdn.net/zengfenliang/article/details/82875359 <br>
 >https://www.cnblogs.com/zpaixx/p/10578067.html 中的问题1 <br>
 
-问题2：requirement中hacking版本<br>
+问题3：requirement中hacking版本<br>
 >打开并修改/opt/stack/tacker-horizon/test-requirements.txt中的版本限制，选择直接注释掉<br>
 
-问题3：报错Unable to establish SSL connection<br>
+问题4：报错Unable to establish SSL connection<br>
 >https://cloud.tencent.com/developer/article/1198254 中的问题2<br>
 
+
+
 ### 计算节点
-问题1：虚拟环境的文件夹问题，同控制节点问题1<br>
+问题1：虚拟环境的文件夹问题，同控制节点问题1和2<br>
 
 问题2：卡在cloning Nova<br>
 >换网址 https://gitee.com/sulinuxsu/nova.git 单独执行命令<br>
