@@ -29,6 +29,7 @@ https://blog.csdn.net/hjc121125/article/details/105519302 跟我们安装的版�
 ### 控制节点
 问题1：权限问题 <br>
 >https://blog.csdn.net/hjc121125/article/details/105519302 中的问题5 <br>
+
 问题2：虚拟环境问题<br>
 >https://blog.csdn.net/zengfenliang/article/details/82875359 <br>
 >https://www.cnblogs.com/zpaixx/p/10578067.html 中的问题1 <br>
