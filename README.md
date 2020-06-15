@@ -12,12 +12,15 @@ dns-nameserver：8.8.8.8
 网络工具：apt install net-tools 查看ifconfig 网卡信息<br>
 https://blog.csdn.net/mountzf/article/details/52035499  interfaces网卡配置详解<br>
 
-打开SSH (https://blog.csdn.net/baidu_38407190/article/details/105981111)<br>
-更换apt源（阿里源）和pip源（清华源）(https://www.cnblogs.com/cymwill/p/10293205.html)<br>
-更新apt-get update, apt-get upgrade，安装 apt install python-pip <br>
-安装apt-get install git <br>
+1. 打开SSH (https://blog.csdn.net/baidu_38407190/article/details/105981111)  后面的操作可以在Xshell中进行<br>
+2. 更换apt源（阿里源）和pip源（清华源）(https://www.cnblogs.com/cymwill/p/10293205.html)<br>
+3. 更新apt-get update && apt-get upgrade <br>
+4. 安装 apt install python-pip <br>
+5. 安装apt-get install git <br>
+
 ## 开始安装
 参看教程 https://github.com/free5gmano/tacker-example-plugin/blob/master/README.md <br>
+记得在stack用户下同样需要更换pip源 <br>
 需要更改的地方：<br>
 >1.更换devstack的Git源 https://github.com/openstack/devstack.git <br>
 >2.脚本文件中更换其中各个组件的Git源（到devstack中逐个查找更换）<br>
