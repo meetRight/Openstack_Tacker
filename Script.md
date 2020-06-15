@@ -1,4 +1,4 @@
-#控制节点
+# 控制节点
 ```
 [[local|localrc]]
 enable_plugin heat https://github.com/openstack/heat.git stable/rocky
@@ -42,7 +42,7 @@ enable_service placement-api
 enable_service placement-client
 ```
 
-#计算节点
+# 计算节点
 ```
 [[local|localrc]]
 SERVICE_HOST=192.168.210.xxx
