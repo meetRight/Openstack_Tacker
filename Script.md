@@ -39,7 +39,7 @@ disable_service etcd3
 MULTI_HOST=1
 
 FLAT_INTERFACE=ens192
-PUBLIC_INTERFACE=en3160
+PUBLIC_INTERFACE=ens160
 
 enable_service placement-api
 enable_service placement-client
