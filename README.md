@@ -13,7 +13,7 @@ dns-nameserver：8.8.8.8
 https://blog.csdn.net/mountzf/article/details/52035499  interfaces网卡配置详解<br>
 
 1. 打开SSH (https://blog.csdn.net/baidu_38407190/article/details/105981111)  后面的操作可以在Xshell中进行<br>
-2. 更换apt源（阿里源）和pip源（清华源）(https://www.cnblogs.com/cymwill/p/10293205.html)<br>
+2. 更换apt源（阿里源或者清华源）和pip源（清华源）(https://www.cnblogs.com/cymwill/p/10293205.html)<br>
 3. 更新apt-get update && apt-get upgrade <br>
 4. 安装 apt install python-pip <br>
 5. 安装apt-get install git <br>
@@ -43,6 +43,12 @@ https://blog.csdn.net/hjc121125/article/details/105519302 跟我们安装的版�
 
 问题4：报错Unable to establish SSL connection<br>
 >https://cloud.tencent.com/developer/article/1198254 中的问题2<br>
+
+问题5：uwsgi安装时报错找不到文件或者目录<br>
+>打开devstack/lib/apache，修改第97行的匹配模式uwsgi*/为*.tar.gz；修改第98行的解压路径uwsgi为$dir;<br>
+
+问题6：openstack的组件克隆问题<br>
+>因为网络问题可能克隆失败，可以选择更换克隆地址，单独执行。<br>
 
 
 
