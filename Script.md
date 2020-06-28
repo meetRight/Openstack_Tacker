@@ -9,8 +9,7 @@ enable_plugin barbican https://github.com/openstack/barbican.git stable/rocky
 enable_plugin mistral https://github.com/openstack/mistral.git stable/rocky
 enable_plugin aodh https://github.com/openstack/aodh.git stable/rocky
 
-# USE_SCREEN=True
-# LOGFILE=/opt/stack/logs/stack.sh.log
+LOGFILE=/opt/stack/logs/stack.sh.log
 HOST_IP=192.168.210.xxx
 SERVICE_HOST=$HOST_IP
 GIT_BASE=https://github.com
@@ -41,8 +40,6 @@ MULTI_HOST=1
 FLAT_INTERFACE=ens192
 PUBLIC_INTERFACE=ens160
 
-enable_service placement-api
-enable_service placement-client
 ```
 
 ## 计算节点
