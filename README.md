@@ -29,7 +29,6 @@ https://blog.csdn.net/mountzf/article/details/52035499  interfaces网卡配置�
 https://yangsijie666.github.io/2018/09/12/devstack%E5%AE%89%E8%A3%85R%E7%89%88/  安装教程写的不错<br>
 https://blog.csdn.net/hjc121125/article/details/105519302 跟我们安装的版本一致，而且其中出现的问题很相似<br>
 
-### 控制节点
 问题1：权限问题 <br>
 >https://blog.csdn.net/hjc121125/article/details/105519302 中的问题5 <br>
 
@@ -50,12 +49,9 @@ https://blog.csdn.net/hjc121125/article/details/105519302 跟我们安装的版�
 问题6：openstack的组件克隆问题<br>
 >因为网络问题可能克隆失败，可以选择更换克隆地址，单独执行。<br>
 
-
-
-### 计算节点
-问题1：虚拟环境的文件夹问题，同控制节点问题1和2<br>
-
-问题2：卡在cloning Nova<br>
+问题7：卡在cloning Nova<br>
 >换网址 https://gitee.com/sulinuxsu/nova.git 单独执行命令<br>
 
+问题8：无法卸载某些安装包(pustil)的问题<br>
+>执行命令sudo pip install XXX -U --ignore-installed<br>
 
