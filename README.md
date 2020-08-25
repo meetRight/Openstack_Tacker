@@ -55,3 +55,19 @@ https://blog.csdn.net/hjc121125/article/details/105519302 跟我们安装的版�
 问题8：无法卸载某些安装包(pustil)的问题<br>
 >执行命令sudo pip install XXX -U --ignore-installed<br>
 
+问题9：openstack服务器重启后无法上网<br>
+>原因是openstack将外网网卡ens3加入网桥之中，配置无法生效。<br>
+>给网桥配置相关的IP地址和路由即可，具体操作如下<br>
+'''
+ifconfig br-ex 192.168.210.XXX/24
+ip route add default via 192.168.210.254 dev br-ex
+'''
+
+问题10：openstack中存在界面中虚拟机、卷、网络服务等删除失败的问题，以下分类解决<br>
+'''
+1.	虚拟机删除失败的问题：打开对应的nova数据库（多节点情况下找到对应的节点nova_cell**)将虚拟机对应的deleted状态置为id号即可；
+2.	卷服务删除的问题：先在数据库中删除对应的信息，然后将饼图（quota）中卷的deleted状态置为1；
+3.	网络服务无法删除的问题：包含网络服务、网络服务模板、转发图模板、和VNF。删除数据库时会遇见外键约束的问题无法删除，可以根据外键约束信息提示找到相应的依赖表，然后逐个删除。
+'''
+
+
