@@ -50,7 +50,7 @@ https://blog.csdn.net/hjc121125/article/details/105519302 跟我们安装的版�
 >https://cloud.tencent.com/developer/article/1198254 中的问题2<br>
 
 问题5：uwsgi安装时报错找不到文件或者目录<br>
->打开devstack/lib/apache，修改第97行的匹配模式uwsgi*/为*.tar.gz；修改第98行的解压路径uwsgi为$dir;<br>
+>打开devstack/lib/apache，修改第97行的匹配模式uwsgi*/为*.tar.gz；修改第98行的解压路径uwsgi为$dir，如下图;<br>
 ![](https://github.com/meetRight/Pictures/blob/master/tacker1.png)
 
 问题6：openstack的组件克隆问题<br>
@@ -72,8 +72,8 @@ ip route add default via 192.168.210.254 dev br-ex
 
 问题10：openstack中存在界面中虚拟机、卷、网络服务等删除失败的问题，以下分类解决<br>
 
->1.虚拟机删除失败的问题：打开对应的nova数据库（多节点情况下找到对应的节点nova_cell**)将虚拟机对应的deleted状态置为id号即可；<br>
->2.卷服务删除的问题：先在数据库中删除对应的信息，然后将饼图（quota）中卷的deleted状态置为1；<br>
->3.网络服务无法删除的问题：包含网络服务、网络服务模板、转发图模板、和VNF。删除数据库时会遇见外键约束的问题无法删除，可以根据外键约束信息提示找到相应的依赖表，然后逐个删除。<br>
+1. 虚拟机删除失败的问题：打开对应的nova数据库（多节点情况下找到对应的节点nova_cell**)将虚拟机对应的deleted状态置为id号即可；<br>
+2. 卷服务删除的问题：先在数据库中删除对应的信息，然后将饼图（quota）中卷的deleted状态置为1；<br>
+3. 网络服务无法删除的问题：包含网络服务、网络服务模板、转发图模板、和VNF。删除数据库时会遇见外键约束的问题无法删除，可以根据外键约束信息提示找到相应的依赖表，然后逐个删除。<br>
 
 
