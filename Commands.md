@@ -49,10 +49,10 @@ done
 ## Openstack日志查看
 ```
 Openstack的日志全部放在了systemctl里面
-1.	查看各个组件的服务名
+1. 查看各个组件的服务名
 # sudo systemctl status "devstack@*"
 看到tacker的服务名为：devstack@tacker.service
  
-2.	查看报错的日志：
+2. 查看报错的日志：
 # sudo journalctl -a -u devstack@c-vol.service | grep "ERROR"
 ```
