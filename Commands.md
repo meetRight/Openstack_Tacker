@@ -34,6 +34,13 @@ for i in `seq 100`;do
      done 
 done
 ```
+## 镜像glance常用命令：
+```
+查询：# openstack image list
+下载：# glance image-download --file <存放的文件路径和名称> <uuid>
+上传：# openstack image create "cirros"   --file cirros-0.3.4-x86_64-disk.img   --disk-format qcow2 --container-format bare  --public
+      glance image-create --disk-format=qcow2 --container-format=bare --visibility=public --file <镜像文件全路径> --name <镜像名称> --property hw_scsi_model=virtio-scsi  --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes --property os_admin_user=root
+```
 ## 数据库操作常用的命令：
 ```
 进入数据库：# mysql -u root -p,然后输入密码
